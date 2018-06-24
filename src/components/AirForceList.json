@@ -2,7 +2,8 @@
   "id": 1,
   "title": "Airman",
     "grade": "E-1",
-  "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/E2_USAF_AM.svg/1425px-E2_USAF_AM.svg.png"
+  "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/E2_USAF_AM.svg/1425px-E2_USAF_AM.svg.png",
+    description:"An airman in the U.S. Air Force is the second lowest enlisted rank and directly above airman basic. It is equivalent to the rank of private in the Army, private first class in the Marines, and seaman apprentice in the Navy/Coast Guard. Airman is the also an entry-level rank for newly or recently enlisted members of the Air Force. \nAirmen are responsible for continue initial training and adjusting to life in the Air Force. Airmen typically spend a lot of time in training and shadowing more experienced enlisted personnel just like airman basics. Most airmen are enrolled in schools for their duty specialty. The actual length of this training varies by job but could be as long as one year."
   },
   {
     "id":2,  "grade": "E-2","title":"Airman First Class","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/E3_USAF_AM1.svg/1219px-E3_USAF_AM1.svg.png"

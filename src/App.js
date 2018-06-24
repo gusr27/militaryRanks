@@ -21,7 +21,7 @@ class App extends Component {
                 <Scene key="army" component={Army} title="Army"/>
                 <Scene key="marines" component={Marines} title="Marine Corps"/>
                 <Scene key="navy" component={Navy} title="Navy"/>
-                <Scene key="info" component={InfoPage} title="Info"/>
+                <Scene key="info" component={InfoPage} title="info"/>
             </Stack>
             
             
