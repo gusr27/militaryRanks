@@ -18,16 +18,16 @@ class App extends Component {
         <AirForce/>
         <Footer>
           <FooterTab>
-            <Button active>
+            <Button key={1} active>
               <Text>Air Force</Text>
             </Button>
-            <Button>
+            <Button key={2}>
               <Text>Army</Text>
             </Button>
-            <Button >
+            <Button key={3}>
               <Text>Marines</Text>
             </Button>
-            <Button>
+            <Button key={4}>
               <Text>Navy</Text>
             </Button>
           </FooterTab>

@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
-import { Card, Image,CardItem, Body, Content, Icon, Text, Segment, List, ListItem, Button} from 'native-base'
+import { Card,CardItem, Body, Content, Icon, Text, Segment, List, ListItem, Button} from 'native-base'
+import {Image} from 'react-native'
 import enlistedData from './AirForceList.json'
 class AirForce extends Component {
     
-    const {title, data}= enlistedData
+    
   render(){
     return(
 
@@ -20,12 +21,14 @@ class AirForce extends Component {
                 <Card>
                   <CardItem>
                     <Body>
-                      <Text>{title}</Text>
-                      <Image source={{image}} style={{height:200, width:null, flex:1}}/>
+                      <Text>{enlistedData.title}</Text>
+                      
                     </Body>
                   </CardItem>
+                    <CardItem cardBody>
+                        <Image source={{uri: enlistedData.image}} style={{height: 200, width: null, flex: 1}}/>
+                    </CardItem>
                 </Card>
-
               </ListItem>
             }>
           </List>
