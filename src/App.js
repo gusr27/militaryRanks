@@ -6,6 +6,7 @@ import Marines from './components/Marines'
 import Navy from './components/Navy'
 import Army from './components/Army'
 import HomePage from './components/HomePage'
+import InfoPage from './components/InfoPage'
 import {FooterNav} from './components/FooterNav'
 
 class App extends Component {
@@ -20,7 +21,9 @@ class App extends Component {
                 <Scene key="army" component={Army} title="Army"/>
                 <Scene key="marines" component={Marines} title="Marine Corps"/>
                 <Scene key="navy" component={Navy} title="Navy"/>
+                <Scene key="info" component={InfoPage} title="Info"/>
             </Stack>
+            
             
         </Router>
         
