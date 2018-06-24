@@ -1,9 +1,13 @@
 [{
   "id": 1,
   "title": "Airman",
-  "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/E2_USAF_AM.svg/50px-E2_USAF_AM.svg.png"
+    "grade": "E-1",
+  "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/E2_USAF_AM.svg/1425px-E2_USAF_AM.svg.png"
   },
   {
-    "id":2, "title":"Airman First Class","image":"http://https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/E3_USAF_AM1.svg/50px-E3_USAF_AM1.svg.png.com/wp-content/uploads/E2-Airman.jpg"
+    "id":2,  "grade": "E-2","title":"Airman First Class","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/E3_USAF_AM1.svg/1219px-E3_USAF_AM1.svg.png"
   },
+  {
+    "id":3,  "grade": "E-3","title":"Senior Airman","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/E4_USAF_SAM.svg/1128px-E4_USAF_SAM.svg.png"
+  }
 ]
