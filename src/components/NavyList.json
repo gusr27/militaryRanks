@@ -1,9 +1,121 @@
 [{
-  "id": 1,
-  "title": "Airman",
-  "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/E2_USAF_AM.svg/50px-E2_USAF_AM.svg.png"
-  },
-  {
-    "id":2, "title":"Airman First Class","image":"http://https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/E3_USAF_AM1.svg/50px-E3_USAF_AM1.svg.png.com/wp-content/uploads/E2-Airman.jpg"
-  },
+  "id":0, "title":"Seaman Apprentice",
+    "branch": "Navy",
+    "grade":"E-2",
+    "description":'',
+    "nato":"OR-2",
+    "abv":"SA",
+    "address":"Seamna (last name), Fireman (last name), Constructionman (last name), Airman (last name)",
+    "pay":"$1,793/mo" 
+},
+ {
+  "id":1, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":2, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":3, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":4, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":5, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":6, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":7, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":8, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":9, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":10, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+},
+ {
+  "id":11, "title":"",
+    "branch": "Navy",
+    "grade":"E-",
+    "description":'',
+    "nato":"OR-",
+    "abv":"",
+    "address":" (last name)",
+    "pay":"$/mo" 
+}
 ]
