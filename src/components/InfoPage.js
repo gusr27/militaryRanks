@@ -94,8 +94,8 @@ class InfoPage extends Component {
                                     </Col>
                                     <Col>
                                         <Text>Navy</Text>
-                                        <Thumbnail square resizeMode={"contain"} source={Images.Army[0].ranks[id]} />
-                                        <Text note>Private Second Class</Text>
+                                        <Thumbnail square resizeMode={"contain"} source={Images.Navy[0].ranks[id]} />
+                                        <Text note>{navyData[id].title}</Text>
                                     </Col>
                                 </Row>
                             </Grid>
