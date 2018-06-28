@@ -40,7 +40,120 @@ class InfoPage extends Component {
         }
     }
     
-    ren
+    renderRelatedRanks(branch, id){
+        switch(branch){
+                case 'Navy':
+                    return (
+                        <Grid style={{flex:1}}>
+                        <TouchableWithoutFeedback onPress= {() => {Actions.info({title: armyData[id].title, data: armyData[id]}) }}>
+                                    
+                                <Col>
+
+
+                                            <Text>Air Force</Text>
+                                            <Thumbnail square resizeMode={"contain"} source={Images.AF[0].ranks[id]} />
+                                            <Text note>{airforceData[id].title}</Text>
+
+                                    </Col>
+                                        </TouchableWithoutFeedback>
+                                    <Col>
+                                        <Text>Army</Text>
+                                        
+                                        <Thumbnail square resizeMode={"contain"} source={Images.Army[0].ranks[id]} />
+                                            <Text note>{armyData[id].title}</Text>
+                                    </Col>
+                                    <Col>
+                                        <Text>Marines</Text>
+                                       
+                                        <Thumbnail square resizeMode={"contain"} source={Images.Marines[0].ranks[id]} />
+                                        <Text note>{marineData[id].title}</Text>
+                                    </Col>
+                        </Grid>)
+                case 'Army':
+                    return(<Grid style={{flex:1}}>
+                        <TouchableWithoutFeedback onPress= {() => {Actions.info({title: armyData[id].title, data: armyData[id]}) }}>
+                                    
+                                <Col>
+
+
+                                            <Text>Air Force</Text>
+                                            <Thumbnail square resizeMode={"contain"} source={Images.AF[0].ranks[id]} />
+                                            <Text note>{airforceData[id].title}</Text>
+
+                                    </Col>
+                                        </TouchableWithoutFeedback>
+                                    <Col>
+                                        
+                                        <Text>Marines</Text>
+                                       
+                                        <Thumbnail square resizeMode={"contain"} source={Images.Marines[0].ranks[id]} />
+                                        <Text note>{marineData[id].title}</Text>
+                                    </Col>
+                                    <Col>
+                                        <Text>Navy</Text>
+                                       
+                                        <Thumbnail square resizeMode={"contain"} source={Images.Navy[0].ranks[id]} />
+                                        <Text note>{navyData[id].title}</Text>
+                                    </Col>
+                        </Grid>)
+                case 'Marines':
+                    return(<Grid style={{flex:1}}>
+                        <TouchableWithoutFeedback onPress= {() => {Actions.info({title: armyData[id].title, data: armyData[id]}) }}>
+                                    
+                                <Col>
+
+
+                                            <Text>Air Force</Text>
+                                            <Thumbnail square resizeMode={"contain"} source={Images.AF[0].ranks[id]} />
+                                            <Text note>{airforceData[id].title}</Text>
+
+                                    </Col>
+                                        </TouchableWithoutFeedback>
+                                    <Col>
+                                        
+                                        <Text>Army</Text>
+                                       
+                                        <Thumbnail square resizeMode={"contain"} source={Images.Army[0].ranks[id]} />
+                                        <Text note>{armyData[id].title}</Text>
+                                    </Col>
+                                    <Col>
+                                        <Text>Navy</Text>
+                                       
+                                        <Thumbnail square resizeMode={"contain"} source={Images.Navy[0].ranks[id]} />
+                                        <Text note>{navyData[id].title}</Text>
+                                    </Col>
+                        </Grid>)
+                case 'AF':
+                    return(<Grid style={{flex:1}}>
+                        <TouchableWithoutFeedback onPress= {() => {Actions.info({title: armyData[id].title, data: armyData[id]}) }}>
+                                    
+                                <Col>
+
+
+                                            <Text>Army</Text>
+                                            <Thumbnail square resizeMode={"contain"} source={Images.Army[0].ranks[id]} />
+                                            <Text note>{armyData[id].title}</Text>
+
+                                    </Col>
+                                        </TouchableWithoutFeedback>
+                                    <Col>
+                                        
+                                        <Text>Marines</Text>
+                                       
+                                        <Thumbnail square resizeMode={"contain"} source={Images.Marines[0].ranks[id]} />
+                                        <Text note>{marineData[id].title}</Text>
+                                    </Col>
+                                    <Col>
+                                        <Text>Navy</Text>
+                                       
+                                        <Thumbnail square resizeMode={"contain"} source={Images.Navy[0].ranks[id]} />
+                                        <Text note>{navyData[id].title}</Text>
+                                    </Col>
+                        </Grid>)
+                default:
+                return(<Text>Error</Text>)
+        }
+    }
 
     render(){
         const {rate, image, description, abv, nato, address,branch, pay, id} = this.props.data   
@@ -75,30 +188,9 @@ class InfoPage extends Component {
                         <CardItem bordered>
 
                             
-                            <Grid style={{flex:1}}>
-                                <Row>
-                                    <TouchableWithoutFeedback onPress= {() => {Actions.info({title: armyData[id].title, data: armyData[id]}) }}>
-                                    <Col>
-
-
-                                            <Text>Army</Text>
-                                            <Thumbnail square resizeMode={"contain"} source={Images.Army[0].ranks[id]} />
-                                            <Text note>{armyData[id].title}</Text>
-
-                                    </Col>
-                                        </TouchableWithoutFeedback>
-                                    <Col>
-                                        <Text>Marines</Text>
-                                        <Thumbnail square resizeMode={"contain"} source={Images.Marines[0].ranks[id]} />
-                                        <Text note>{marineData[id].title}</Text>
-                                    </Col>
-                                    <Col>
-                                        <Text>Navy</Text>
-                                        <Thumbnail square resizeMode={"contain"} source={Images.Navy[0].ranks[id]} />
-                                        <Text note>{navyData[id].title}</Text>
-                                    </Col>
-                                </Row>
-                            </Grid>
+                            
+                                {this.renderRelatedRanks(branch, id)}
+                           
                         </CardItem>
                     </Card>
                 </Content> 
