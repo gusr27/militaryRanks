@@ -17,16 +17,39 @@ class App extends Component {
         <Router>
             <Stack key="root">
                 <Scene key="home" component={HomePage} initial="true" title="Home"/>
-                <Scene key="airforce" component={AirForce} title="Air Force"/>
-                <Scene key="army" component={Army} title="Army"/>
-                <Scene key="marines" component={Marines} title="Marine Corps"/>
-                <Scene key="navy" component={Navy} title="Navy"/>
-                <Scene key="info" component={InfoPage} title="info"/>
+                <Scene key="airforce" component={AirForce} title="Air Force"
+                     onRight={() => Actions.popTo("home")}
+                rightTitle = {<Icon type="FontAwesome" name="home"/>}
+                    />
+                <Scene key="army" component={Army} title="Army"
+                     onRight={() => Actions.popTo("home")}
+                rightTitle = {<Icon type="FontAwesome" name="home"/>}
+                    />
+                <Scene key="marines" component={Marines} title="Marine Corps"
+                     onRight={() => Actions.popTo("home")}
+                rightTitle = {<Icon type="FontAwesome" name="home"/>}
+                    />
+                <Scene key="navy" component={Navy} title="Navy"
+                     onRight={() => Actions.popTo("home")}
+                rightTitle = {<Icon type="FontAwesome" name="home"/>}
+                    />
+                <Scene key="info" component={InfoPage} title="info"
+                     onRight={() => Actions.popTo("home")}
+                rightTitle = {<Icon type="FontAwesome" name="home"/>}
+                    />
+                 
             </Stack>
+           
             
             
         </Router>
-        
+         <Footer>
+                <FooterTab>
+                    <Button>
+                        <Text>Footerbar</Text>
+                    </Button>
+                </FooterTab>
+            </Footer>
       </Container>
     )
   }
