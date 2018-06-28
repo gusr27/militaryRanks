@@ -84,7 +84,7 @@
     "grade":"E-9",
     "description":'Master Gunnery Sergeant is the ninth among Enlisted ranks in the USMC, equal in rank but different in responsibilities than a Sergeant Major. Master Gunnery Sergeants are technical managers, while Sergeants Major are personnel managers.\n\n Master Gunnery Sergeants lead at the Battalion level or higher, all the way up to Force levels, advising Majors all the way up to Generals of the readiness of their units with respect to equipment and programs.',
     "nato":"OR-9",
-    "abv":"",
+    "abv":"MGySgt",
     "address":"Master Gunnery Sergeant (last name), Informal: Master Guns",
     "pay":"$5,052/mo"
 },
@@ -94,7 +94,7 @@
     "grade":"E-9",
     "description":'Sergeant Major is the ninth among Enlisted ranks in the USMC, equal in rank but different in responsibilities than a Master Gunnery Sergeant. Master Gunnery Sergeants are technical managers, while Sergeants Major are personnel managers.\n\n Sergeants Major lead at the Battalion level or higher, all the way up to Force levels, advising Majors all the way up to Generals of the readiness of their units with respect to personnel.',
     "nato":"OR-9",
-    "abv":"SgtMa",
+    "abv":"SgtMaj",
     "address":"Sergeant Major (last name)",
     "pay":"$5,052/mo"
 },
@@ -104,7 +104,7 @@
     "grade":"E-9",
     "description":'The Sergeant Major of the Marine Corps is equal in rank to any other E-9, but with the special job of being the Senior Enlisted Advisor to the Commandant of the Marine Corps. He or she is the voice of all the Enlisted Marines in the USMC, and does his or her job by touring units across the Fleet.',
     "nato":"OR-9",
-    "abv":"sgtMa",
+    "abv":"SgtMajMarCor",
     "address":"Sergeant Major (last name)",
     "pay":"$5,052/mo"
 }
