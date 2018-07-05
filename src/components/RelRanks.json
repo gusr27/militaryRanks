@@ -1,0 +1,51 @@
+{
+    E2:{
+        AF: 0,
+        Marines:0,
+        Navy:0,
+        Army:0
+    },
+    E3:{
+        AF: 1,
+        Marines:1,
+        Navy:1,
+        Army:1
+    },
+    E4:{
+        AF: 2,
+        Marines:2,
+        Navy:2,
+        Army:[2,3]
+    },
+    E5:{
+        AF: 3,
+        Marines:3,
+        Navy:3,
+        Army:4
+    },
+    E6:{
+        AF: 4,
+        Marines:4,
+        Navy:4,
+        Army:5
+    },
+    E7:{
+        AF: [5,6],
+        Marines:5,
+        Navy:5,
+        Army:6
+    },
+    E8:{
+        AF: [7,8],
+        Marines:[6,7],
+        Navy:[6,7],
+        Army:[7,8]
+    },
+    E9:{
+        AF: [9,10,11,12],
+        Marines:[8,9,10],
+        Navy:[8,9,10,11],
+        Army:[9,10,11]
+    }
+    
+}

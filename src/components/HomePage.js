@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Container, Card, CardItem,Header, Title, Content, Button, Left, Right, Body, Icon, Text, Segment, List, ListItem, Thumbnail, Drawer} from 'native-base'
+import {Container, Card, CardItem,Header, Title, Content, Button, Left, Right, Body, Icon, Text, Segment, List, ListItem, Thumbnail, Drawer, Footer} from 'native-base'
 import {Actions} from 'react-native-router-flux'
 import Images from '@images/images'
 
@@ -44,7 +44,9 @@ class HomePage extends Component{
                         </Body>
                     </ListItem>
                 </List>
+               
             </Content>
+            
           
         )
     }

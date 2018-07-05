@@ -9,6 +9,7 @@ import HomePage from './components/HomePage'
 import InfoPage from './components/InfoPage'
 import {FooterNav} from './components/FooterNav'
 
+
 class App extends Component {
   render(){
     return(
@@ -45,9 +46,7 @@ class App extends Component {
         </Router>
          <Footer>
                 <FooterTab>
-                    <Button>
-                        <Text>Footerbar</Text>
-                    </Button>
+                   
                 </FooterTab>
             </Footer>
       </Container>

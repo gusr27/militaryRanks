@@ -6,7 +6,8 @@
     "nato":"OR-2",
     "abv":"PFC",
     "address":"PFC (last name)",
-    "pay":"$1,793/mo"
+    "pay":"$1,793/mo",
+    "rel":{AF:0, Army:0,Navy:0}
 },
  {
   "id":1, "title":"Lance Corporal",
@@ -16,7 +17,8 @@
     "nato":"OR-3",
     "abv":"LCpl",
     "address":"Lance Corporal (last name)",
-    "pay":"$1,885/mo"
+    "pay":"$1,885/mo",
+    "rel":{AF:1, Army:1,Navy:1}
 },
  {
   "id":2, "title":"Corporal",
@@ -26,7 +28,8 @@
     "nato":"OR-4",
     "abv":"Cpl",
     "address":"Corporal (last name)",
-    "pay":"$2,088/mo"
+    "pay":"$2,088/mo",
+    "rel":{AF:2, Army:[2,3],Navy:2}
 },
  {
   "id":3, "title":"Sergeant",
@@ -36,7 +39,8 @@
     "nato":"OR-5",
     "abv":"Sgt",
     "address":"Sergeant (last name)",
-    "pay":"$2,278/mo"
+    "pay":"$2,278/mo",
+    "rel":{AF:3, Army:4,Navy:3}
 },
  {
   "id":4, "title":"Staff Sergeant",
@@ -46,7 +50,8 @@
     "nato":"OR-6",
     "abv":"SSgt",
     "address":"Staff Sergeant (last name) | NEVER SARGE OR SERGEANT",
-    "pay":"$2,486/mo"
+    "pay":"$2,486/mo",
+    "rel":{AF:4, Army:5,Navy:4}
 },
  {
   "id":5, "title":"Gunnery Sergeant",
@@ -56,7 +61,8 @@
     "nato":"OR-7",
     "abv":"GySgt",
     "address":"Gunnery Sergeant (last name), Informal: Gunny",
-    "pay":"$2,875/mo"
+    "pay":"$2,875/mo",
+    "rel":{AF:5, Army:6,Navy:5}
 },
  {
   "id":6, "title":"Master Sergeant",
@@ -66,7 +72,8 @@
     "nato":"OR-8",
     "abv":"MSgt",
     "address":"Master Sergeant (last name)",
-    "pay":"$4,136/mo"
+    "pay":"$4,136/mo",
+    "rel":{AF:6, Army:7,Navy:6}
 },
  {
   "id":7, "title":"First Sergeant",
@@ -76,7 +83,8 @@
     "nato":"OR-8",
     "abv":"1stSg",
     "address":"First Sergeant (last name)",
-    "pay":"$4,136/mo"
+    "pay":"$4,136/mo",
+    "rel":{AF:7, Army:8,Navy:7}
 },
  {
   "id":8, "title":"Master Gunnery Sergeant",
@@ -86,7 +94,8 @@
     "nato":"OR-9",
     "abv":"MGySgt",
     "address":"Master Gunnery Sergeant (last name), Informal: Master Guns",
-    "pay":"$5,052/mo"
+    "pay":"$5,052/mo",
+    "rel":{AF:[8,9], Army:9,Navy:[8,9]}
 },
  {
   "id":9, "title":"Sergeant Major",
@@ -96,7 +105,8 @@
     "nato":"OR-9",
     "abv":"SgtMaj",
     "address":"Sergeant Major (last name)",
-    "pay":"$5,052/mo"
+    "pay":"$5,052/mo",
+    "rel":{AF:10, Army:10,Navy:10}
 },
  {
   "id":10, "title":"Sergeant Major Of The Marine Corps",
@@ -106,7 +116,8 @@
     "nato":"OR-9",
     "abv":"SgtMajMarCor",
     "address":"Sergeant Major (last name)",
-    "pay":"$5,052/mo"
+    "pay":"$5,052/mo",
+    "rel":{AF:11, Army:11,Navy:11}
 }
  
 ]

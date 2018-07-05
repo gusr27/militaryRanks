@@ -9,7 +9,8 @@
     "nato":"OR-2",
     "abv":"PV2",
     "address":"Private (last name)",
-    "pay":"$1,793/mo"
+    "pay":"$1,793/mo",
+    "rel":{AF:0,Marines:0,Navy:0}
   },
   {
     "id":1, "title":"Private First Class",
@@ -19,7 +20,8 @@
     "nato":"OR-3",
     "abv":"PFC",
     "address":"Private (last name)",
-    "pay":"$1,885/mo"
+    "pay":"$1,885/mo",
+    "rel":{AF:1,Marines:1,Navy:1}
   },
  {
    "id":2, "title":"Specialist",
@@ -29,7 +31,8 @@
     "nato":"OR-4",
     "abv":"SPC",
     "address":"Specialist (last name)",
-    "pay":"$2,088/mo"  
+    "pay":"$2,088/mo",
+    "rel":{AF:2,Marines:2,Navy:2} 
  },
  {
    "id":3, "title":"Corporal",
@@ -39,7 +42,8 @@
     "nato":"OR-4",
     "abv":"CPL",
     "address":"Corporal (last name)",
-    "pay":"$2,088/mo"  
+    "pay":"$2,088/mo",
+    "rel":{AF:2,Marines:2,Navy:2} 
  },
  {
    "id":4, "title":"Sergeant",
@@ -49,7 +53,8 @@
     "nato":"OR-5",
     "abv":"SGT",
     "address":"Sergeant (last name)",
-    "pay":"$2,278/mo"  
+    "pay":"$2,278/mo",
+    "rel":{AF:3,Marines:3,Navy:3}  
  },
  {
    "id":5, "title":"Staff Sergeant",
@@ -59,7 +64,8 @@
     "nato":"OR-6",
     "abv":"SSG",
     "address":"Sergeant (last name)",
-    "pay":"$2,486/mo"  
+    "pay":"$2,486/mo",
+    "rel":{AF:4,Marines:4,Navy:4}  
  },
  {
    "id":6, "title":"Sergeant First Class",
@@ -69,7 +75,8 @@
     "nato":"OR-7",
     "abv":"SFC",
     "address":"Sergeant (last name)",
-    "pay":"$2,875/mo"  
+    "pay":"$2,875/mo",
+    "rel":{AF:5,Marines:5,Navy:5}  
  },
  {
    "id":7, "title":"Master Sergeant",
@@ -79,7 +86,8 @@
     "nato":"OR-8",
     "abv":"MSG",
     "address":"Sergeant (last name)",
-    "pay":"$4,136/mo"  
+    "pay":"$4,136/mo",
+    "rel":{AF:6,Marines:6,Navy:6}  
  },
  {
    "id":8, "title":"First Sergeant",
@@ -89,7 +97,8 @@
     "nato":"OR-8",
     "abv":"1SG",
     "address":"First Sergeant (last name)",
-    "pay":"$4,136"  
+    "pay":"$4,136",
+    "rel":{AF:7,Marines:7,Navy:7}
  },
  {
    "id":9, "title":"Sergeant Major",
@@ -99,7 +108,8 @@
     "nato":"OR-9",
     "abv":"SGM",
     "address":"Sergeant Major (last name)",
-    "pay":"$5,052/mo"  
+    "pay":"$5,052/mo"  ,
+    "rel":{AF:[8,9],Marines:8,Navy:[8,9]}
  },
  {
    "id":10, "title":"Command Sergeant Major",
@@ -109,7 +119,8 @@
     "nato":"OR-9",
     "abv":"CSM",
     "address":"Command Sergeant Major (last name)",
-    "pay":"$5,052/mo"  
+    "pay":"$5,052/mo",
+    "rel":{AF:10,Marines:9,Navy:10}  
  },
  {
    "id":11, "title":"Sergeant Major of the Army",
@@ -119,6 +130,7 @@
     "nato":"OR-9",
     "abv":"SMA",
     "address":"Sergeant Major of the Army (last name)",
-    "pay":"$5,052/mo"  
+    "pay":"$5,052/mo",
+    "rel":{AF:11,Marines:10,Navy:11}  
  }
 ]

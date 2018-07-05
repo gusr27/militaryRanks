@@ -6,7 +6,8 @@
     "nato":"OR-2",
     "abv":"SA",
     "address":"Seaman (last name), Fireman (last name), Constructionman (last name), Airman (last name)",
-    "pay":"$1,793/mo" 
+    "pay":"$1,793/mo",
+    "rel":{AF: 0, Marines: 0, Army: 0}
 },
  {
   "id":1, "title":"Seaman",
@@ -16,7 +17,8 @@
     "nato":"OR-3",
     "abv":"SN",
     "address":"Seaman (last name), Fireman (last name), Constructionman (last name), Airman (last name)",
-    "pay":"$1,885/mo" 
+    "pay":"$1,885/mo",
+    "rel":{AF:1,Marines:1,Army:1}
 },
  {
   "id":2, "title":"Petty Officer Third Class",
@@ -26,7 +28,8 @@
     "nato":"OR-4",
     "abv":"PO3",
     "address":"Petty Officer (last name)",
-    "pay":"$2,088/mo" 
+    "pay":"$2,088/mo",
+    "rel":{AF:2,Marines:2,Army:[2,3]} 
 },
  {
   "id":3, "title":"Petty Officer Second Class",
@@ -36,7 +39,8 @@
     "nato":"OR-5",
     "abv":"PO2",
     "address":"Petty Officer (last name)",
-    "pay":"$2,278/mo" 
+    "pay":"$2,278/mo",
+    "rel":{AF:3,Marines:3,Army:4}
 },
  {
   "id":4, "title":"Petty Officer First Class",
@@ -46,7 +50,8 @@
     "nato":"OR-6",
     "abv":"PO1",
     "address":"Petty Officer (last name)",
-    "pay":"$2,486/mo" 
+    "pay":"$2,486/mo",
+    "rel":{AF:4,Marines:4,Army:5}
 },
  {
   "id":5, "title":"Cheif Petty Officer",
@@ -56,7 +61,8 @@
     "nato":"OR-7",
     "abv":"CPO",
     "address":"Chief (last name)",
-    "pay":"$2,875/mo" 
+    "pay":"$2,875/mo",
+    "rel":{AF:5,Marines:5,Army:6}
 },
  {
   "id":6, "title":"Senior Chief Petty Officer",
@@ -66,7 +72,8 @@
     "nato":"OR-8",
     "abv":"SCPO",
     "address":"Senior Chief (last name), Informal: Senior | NEVER CHIEF",
-    "pay":"$4,136/mo" 
+    "pay":"$4,136/mo",
+    "rel":{AF:6,Marines:6,Army:7}
 },
  {
   "id":7, "title":"Master Chief Petty Officer",
@@ -76,29 +83,32 @@
     "nato":"OR-9",
     "abv":"MCPO",
     "address":"Master Chief (last name) | NEVER CHIEF",
-    "pay":"$5,052/mo" 
+    "pay":"$5,052/mo",
+    "rel":{AF:7,Marines:7,Army:8}
 },
  {
-  "id":9, "title":"Command Senior Chief Petty Officer",
+  "id":8, "title":"Command Senior Chief Petty Officer",
     "branch": "Navy",
     "grade":"E-8",
     "description":'As of 2005 and after a pilot program taking place on three mine countermeasures ships, the Navy started appointing senior chiefs to command roles. Until this time, senior chiefs had a senior enlisted leadership role in the submarine force as chiefs of the boat. This new effort works to formalize leadership at the senior chief level. In July 2015, the rate was formally established as a rating. Before it had been a billet instead of a rating.',
     "nato":"OR-8",
     "abv":"CMDCS",
     "address":"Command Senior Chief (last name)",
-    "pay":"$/mo"
+    "pay":"$/mo",
+    "rel":{AF:8,Marines:8,Army:9}
 },
  {
   
      
-     "id":8, "title":"Command Master Chief Petty Officer",
+     "id":9, "title":"Command Master Chief Petty Officer",
     "branch": "Navy",
     "grade":"E-9",
     "description":'Command Master Chiefs are the singular leading Chief on ships or shore-based units. They are the principal enlisted advisor to the Commanding Officer. The CO, XO, and CMC form the "Command Team". CMCs set the example for all enlisted sailors, and enormously set the tone for the unit. On a Submarine, the CMC is instead referred to as the "Chief of the Boat", or COB.\n\n Additionally, Combatant Commanders and Geographic Commanders have their own senior enlisted advisors known as Fleet Master Chiefs and Force Master Chiefs, whose roles are similar to CMC/COB but at a much higher level. There are 20 such leaders within the US Navy, plus those who serve at Joint Commands.\n\n CMDCM is its own unique rate -- the CMC/COB is no longer affiliated with his or her previous rate of Electrician\'s Mate, Machinist\'s Mate, etc.',
     "nato":"OR-9",
     "abv":"CMDCM",
     "address":"CMC (last name), COB (last name) | NEVER MASTER CHIEF OR CHIEF",
-    "pay":"$5,052/mo" 
+    "pay":"$5,052/mo",
+    "rel":{AF:9,Marines:8,Army:9}
 },
  {
   "id":10, "title":"Fleet/Force Master Chief Petty Officer",
@@ -108,7 +118,8 @@
     "nato":"OR-9",
     "abv":"FLTCM/FORCM",
     "address":" (last name)",
-    "pay":"$5,052/mo" 
+    "pay":"$5,052/mo",
+    "rel":{AF:10,Marines:9,Army:10}
 },
  {
   "id":11, "title":"Master Chief Petty Officer of the Navy",
@@ -118,6 +129,7 @@
     "nato":"OR-9",
     "abv":"MCPON",
     "address":"MCPON (last name)",
-    "pay":"$5,052/mo" 
+    "pay":"$5,052/mo",
+    "rel":{AF:11,Marines:10,Army:11} 
 }
 ]
