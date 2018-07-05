@@ -18,7 +18,14 @@ class MenuPage extends Component{
                     <ListItem onPress= {() => {Actions.airforce(); }}>
                         <Thumbnail square size={80} source={Images.AFLogo} />
                         <Body>
-                            <Text>Air Force</Text>
+                            <Text>Enlisted</Text>
+                            <Text note>Tap to See Ranks</Text>
+                        </Body>
+                    </ListItem>
+                    <ListItem onPress= {() => {Actions.airforce(); }}>
+                        <Thumbnail square size={80} source={Images.AFLogo} />
+                        <Body>
+                            <Text>Officers</Text>
                             <Text note>Tap to See Ranks</Text>
                         </Body>
                     </ListItem>

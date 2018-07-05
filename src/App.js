@@ -7,6 +7,7 @@ import Navy from './components/Navy'
 import Army from './components/Army'
 import HomePage from './components/HomePage'
 import InfoPage from './components/InfoPage'
+import MenuPage from './components/MenuPage'
 import {FooterNav} from './components/FooterNav'
 
 class App extends Component {
@@ -37,7 +38,10 @@ class App extends Component {
                      onRight={() => Actions.popTo("home")}
                 rightTitle = {<Icon type="FontAwesome" name="home"/>}
                     />
-                 
+                 <Scene key="menu" component={MenuPage} title="menu"
+                    onRight={() => Actions.popTo("home")}
+                rightTitle = {<Icon type="FontAwesome" name="home"/>}
+                    />
             </Stack>
            
             
