@@ -15,7 +15,7 @@ class HomePage extends Component{
               
                 
                 <List>
-                    <ListItem onPress= {() => {Actions.airforce(); }}>
+                    <ListItem onPress= {() => {Actions.menu(); }}>
                         <Thumbnail square size={80} source={Images.AFLogo} />
                         <Body>
                             <Text>Air Force</Text>
