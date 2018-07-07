@@ -86,7 +86,7 @@ class MenuPage extends Component{
                 <List>
                     {this.renderListItem()}
                     <ListItem onPress= {() => {Actions.home(); }}>
-                        {this.renderThumbnailO}
+                        {this.renderThumbnailO()}
                         <Body>
                             <Text>Officers</Text>
                             <Text note>Tap to See Ranks</Text>

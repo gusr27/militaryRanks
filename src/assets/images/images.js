@@ -23,6 +23,17 @@ const images = {
                 require('./USAF1.png')
                 
             ]
+        },
+        {
+            id:1,
+            ranks:[
+                require('./AF06.png'),
+                require('./AF05.png'),
+                require('./AF04.png'),
+                require('./AF03.png'),
+                require('./AF02.png'),
+                require('./AF01.png')
+            ]
         }
     ],
     Army:[
