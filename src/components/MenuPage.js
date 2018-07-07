@@ -116,7 +116,7 @@ class MenuPage extends Component{
                 <List>
                     {this.renderListItem()}
                     {this.renderThumbnailWO()}
-                    <ListItem onPress= {() => {Actions.home(); }}>
+                    <ListItem onPress= {() => {Actions.officer(); }}>
                         <Thumbnail square size={80} resizeMode={"contain"} source={Images.AF[1].ranks[0]} />
                         <Body>
                             <Text>Officers</Text>
