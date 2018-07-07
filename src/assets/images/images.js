@@ -25,7 +25,7 @@ const images = {
             ]
         },
         {
-            id:1,
+            
             ranks:[
                 require('./AF06.png'),
                 require('./AF05.png'),
@@ -53,7 +53,19 @@ const images = {
                 require('./Army11.png'),
                 require('./Army12.png')
             ]
+        },
+        {},
+        {
+           
+            ranks:[
+                require('./ArmyWO5.png'),
+                require('./ArmyWO4.png'),
+                require('./ArmyWO3.png'),
+                require('./ArmyWO2.png'),
+                require('./ArmyWO1.png')
+            ]
         }
+        
     ],
     Marines:[
         {
@@ -71,6 +83,17 @@ const images = {
               require('./USMC10.png'),
               require('./USMC11.png')
               
+            ]
+        },
+        {},
+        {
+            
+            ranks:[
+                require('./MarinesWO5.png'),
+                require('./MarinesWO4.png'),
+                require('./MarinesWO3.png'),
+                require('./MarinesWO2.png'),
+                require('./MarinesWO1.png')
             ]
         }
     ],
@@ -90,6 +113,17 @@ const images = {
                 require('./Navy3.png'),
                 require('./Navy2.png'),
                 require('./Navy1.png')
+            ]
+        },
+        {},
+        {
+            id:2,
+            ranks:[
+                require('./NavyWO5.png'),
+                require('./NavyWO4.png'),
+                require('./NavyWO3.png'),
+                require('./NavyWO2.png'),
+                require('./NavyWO1.png')
             ]
         }
     ]

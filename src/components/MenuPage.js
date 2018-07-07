@@ -68,12 +68,42 @@ class MenuPage extends Component{
         }
     }
     
-    renderThumbnailO(){
-        if(this.props.title === "Air Force"){
-            return(<Thumbnail square size={80} resizeMode={"contain"} source={Images.AF[1].ranks[0]} />)
+    renderThumbnailWO(){
+        
+        if (this.props.title==="Marines"){
+            return(
+                <ListItem onPress= {() => {Actions.marines(); }}>
+                        <Thumbnail square size={80} resizeMode={"contain"} source={Images.Marines[2].ranks[0]} />
+                        <Body>
+                            <Text>Warrant Officers</Text>
+                            <Text note>Tap to See Ranks</Text>
+                        </Body>
+                </ListItem>
+            )
+        }
+        else if(this.props.title==="Navy"){
+            return(
+                <ListItem onPress= {() => {Actions.navy(); }}>
+                        <Thumbnail square size={80} resizeMode={"contain"} source={Images.Navy[2].ranks[0]} />
+                        <Body>
+                            <Text>Warrant Officers</Text>
+                            <Text note>Tap to See Ranks</Text>
+                        </Body>
+                </ListItem>
+            )
+        }
+        else if (this.props.title==="Army"){
+            return(
+                <ListItem onPress= {() => {Actions.army(); }}>
+                        <Thumbnail square size={80} resizeMode={"contain"} source={Images.Army[2].ranks[0]} />
+                        <Body>
+                            <Text>Warrant Officers</Text>
+                            <Text note>Tap to See Ranks</Text>
+                        </Body>
+                </ListItem>
+            )
         }
     }
-   
     
     render(){
         
@@ -85,8 +115,9 @@ class MenuPage extends Component{
                 
                 <List>
                     {this.renderListItem()}
+                    {this.renderThumbnailWO()}
                     <ListItem onPress= {() => {Actions.home(); }}>
-                        {this.renderThumbnailO()}
+                        <Thumbnail square size={80} resizeMode={"contain"} source={Images.AF[1].ranks[0]} />
                         <Body>
                             <Text>Officers</Text>
                             <Text note>Tap to See Ranks</Text>
