@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+pod 'Google-Mobile-Ads-SDK'
+target 'MilitaryRanks' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for MilitaryRanks
+
+  target 'MilitaryRanks-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MilitaryRanksTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  
+end
+
+target 'MilitaryRanks-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for MilitaryRanks-tvOS
+
+  target 'MilitaryRanks-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
