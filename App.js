@@ -13,7 +13,7 @@ import MenuPage from './src/components/MenuPage'
 import Officers from './src/components/Officers'
 import DrawerMenu from './src/components/DrawerMenu'
 import {FooterNav} from './src/components/FooterNav'
-import {AdMobBanner} from 'react-native-admob'
+import {AdMobBanner, AdMobInterstitial} from 'react-native-admob'
 
 class App extends Component {
     
@@ -42,7 +42,11 @@ class App extends Component {
     }
     
  
-    
+    componentDidMount(){
+        {/*AdMobInterstitial.setAdUnitID('ca-app-pub-8401428706591374~4682652132')
+                    AdMobInterstitial.setTestDeviceID(['ca-app-pub-8401428706591374/5747453224']);
+                    AdMobInterstitial.requestAd(AdMobInterstitial.showAd());*/}
+    }
   render(){
       
     
@@ -102,19 +106,16 @@ class App extends Component {
         </Router>
          <Footer>
                 <FooterTab>
-
-                    <Button>
                         <AdMobBanner
-                            adSize="fullBanner"
-                            adUnitID="
-       ca-app-pub-8401428706591374~4682652132"
-                            testDevices="ca-app-pub-8401428706591374/1481773722"
-                            onAdFailedToLoad={error => console.error(error)}
-                        />
-                    </Button>
-
+  adSize="fullBanner"
+  adUnitID='ca-app-pub-8401428706591374~4682652132'
+  testDevices={['ca-app-pub-8401428706591374/5747453224']}
+  onAdFailedToLoad={error => console.error(error)}
+/>
+                   
                 </FooterTab>
             </Footer>
+           
       </Container>
         </Drawer>
     )

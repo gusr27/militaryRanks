@@ -4,13 +4,10 @@
   "dependencies": {
     "expo": "^28.0.0",
     "native-base": "^2.7.0",
-    "react": "16.3.1",
+    "react": "^16.4.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.0.tar.gz",
-<<<<<<< HEAD
-    "react-native-admob": "^2.0.0-beta.5",
-=======
+    "react-native-admob": "^2.0.0-beta.4",
     "react-native-drawer-menu": "^0.2.5",
->>>>>>> drawer
     "react-native-router-flux": "^4.0.0-beta.31"
   }
 }
