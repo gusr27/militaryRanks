@@ -47,7 +47,7 @@ class App extends Component {
     
     return(
      <Drawer
-        // style={customStyles.drawer}
+         style={customStyles.drawer}
          ref={(ref) => { this.drawer = ref; }}
           content={<DrawerMenu />}
          onClose={() => this.closeDrawer()} 
@@ -115,7 +115,8 @@ const customStyles = {
     drawer: {
       shadowColor: '#000',
       shadowOpacity: 0.4,
-      shadowRadius: 10
+      shadowRadius: 10,
+      backgroundColor: 'white'
     },
     mask: {}, // style of mask if it is enabled
     main: {} // style of main board

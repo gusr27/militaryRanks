@@ -4,7 +4,7 @@ import {TouchableOpacity} from 'react-native'
 
 const DrawerMenu = () => {
     return(
-        <Container style={{ paddingTop:"3%"}}>
+        <Container style={{ paddingTop:"3%", backgroundColor:"white"}}>
            <Header >
             <Body>
                 <Text>Extras</Text>
