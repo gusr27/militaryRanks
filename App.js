@@ -21,8 +21,6 @@ const INTERSTITIAL_ID = `ca-app-pub-8401428706591374/5747453224`;
 const BANNER_ID = 'ca-app-pub-1425926517331745/4139536433'
 
 
-AdMobInterstitial.setAdUnitID(INTERSTITIAL_ID);
-AdMobInterstitial.setTestDeviceID("EMULATOR");
 class App extends Component {
     
     state = {
