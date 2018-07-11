@@ -1,7 +1,7 @@
 import React , {Component} from 'react'
-import {Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text, Segment, Drawer} from 'native-base'
+import {Container, Header, Title, Content, Footer, FooterTab, Left, Right, Body, Icon, Text, Segment, Drawer} from 'native-base'
 import { Router, Scene, Stack,Actions } from 'react-native-router-flux'
-import {Easing} from 'react-native'
+import {Easing, View, Button} from 'react-native'
 
 import AirForce from './src/components/AirForce'
 import Marines from './src/components/Marines'
@@ -13,6 +13,13 @@ import MenuPage from './src/components/MenuPage'
 import Officers from './src/components/Officers'
 import DrawerMenu from './src/components/DrawerMenu'
 import {FooterNav} from './src/components/FooterNav'
+import {AdMobBanner, AdMobInterstitial} from 'expo'
+
+
+
+const INTERSTITIAL_ID = `ca-app-pub-8401428706591374/5747453224`;
+const BANNER_ID = 'ca-app-pub-1425926517331745/4139536433'
+
 
 class App extends Component {
     
@@ -40,8 +47,13 @@ class App extends Component {
         }
     }
     
- 
-    
+    _openInterstitial = async () => {
+    await AdMobInterstitial.requestAdAsync()
+    await AdMobInterstitial.showAdAsync()
+  };
+    componentDidMount(){
+        
+    }
   render(){
       
     
@@ -93,19 +105,24 @@ class App extends Component {
                     onRight={() => Actions.popTo("home")}
                     rightTitle = {<Icon type="FontAwesome" name="home"/>}
                     />
-                 
+                  
             </Stack>
            
-            
-            
+           
         </Router>
-         <Footer>
+         <Footer >
+             
                 <FooterTab>
-                    
-                        <Text>Footerbar</Text>
+                     <AdMobBanner
+            bannerSize="smartBannerPortrait"
+            adUnitID={BANNER_ID}
+            testDevices="EMULATOR"
+          />
+                       
                    
                 </FooterTab>
             </Footer>
+           
       </Container>
         </Drawer>
     )
