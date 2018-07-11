@@ -1,7 +1,7 @@
 import React , {Component} from 'react'
-import {Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text, Segment, Drawer} from 'native-base'
+import {Container, Header, Title, Content, Footer, FooterTab, Left, Right, Body, Icon, Text, Segment, Drawer} from 'native-base'
 import { Router, Scene, Stack,Actions } from 'react-native-router-flux'
-import {Easing} from 'react-native'
+import {Easing, View, Button} from 'react-native'
 
 import AirForce from './src/components/AirForce'
 import Marines from './src/components/Marines'
@@ -13,8 +13,16 @@ import MenuPage from './src/components/MenuPage'
 import Officers from './src/components/Officers'
 import DrawerMenu from './src/components/DrawerMenu'
 import {FooterNav} from './src/components/FooterNav'
-import {AdMobBanner, AdMobInterstitial} from 'react-native-admob'
+import {AdMobBanner, AdMobInterstitial} from 'expo'
 
+
+
+const INTERSTITIAL_ID = `ca-app-pub-8401428706591374/5747453224`;
+const BANNER_ID = 'ca-app-pub-1425926517331745/4139536433'
+
+
+AdMobInterstitial.setAdUnitID(INTERSTITIAL_ID);
+AdMobInterstitial.setTestDeviceID("EMULATOR");
 class App extends Component {
     
     state = {
@@ -41,18 +49,19 @@ class App extends Component {
         }
     }
     
- 
+    _openInterstitial = async () => {
+    await AdMobInterstitial.requestAdAsync()
+    await AdMobInterstitial.showAdAsync()
+  };
     componentDidMount(){
-        {/*AdMobInterstitial.setAdUnitID('ca-app-pub-8401428706591374~4682652132')
-                    AdMobInterstitial.setTestDeviceID(['ca-app-pub-8401428706591374/5747453224']);
-                    AdMobInterstitial.requestAd(AdMobInterstitial.showAd());*/}
+        
     }
   render(){
       
     
     return(
      <Drawer
-        // style={customStyles.drawer}
+        
          ref={(ref) => { this.drawer = ref; }}
           content={<DrawerMenu />}
          onClose={() => this.closeDrawer()} 
@@ -98,20 +107,20 @@ class App extends Component {
                     onRight={() => Actions.popTo("home")}
                     rightTitle = {<Icon type="FontAwesome" name="home"/>}
                     />
-                 
+                  
             </Stack>
            
-            
-            
+           
         </Router>
          <Footer>
+             
                 <FooterTab>
-                        <AdMobBanner
-  adSize="fullBanner"
-  adUnitID='ca-app-pub-8401428706591374~4682652132'
-  testDevices={['ca-app-pub-8401428706591374/5747453224']}
-  onAdFailedToLoad={error => console.error(error)}
-/>
+                     <AdMobBanner
+            bannerSize="leaderboard"
+            adUnitID={BANNER_ID}
+            testDevices="EMULATOR"
+          />
+                       
                    
                 </FooterTab>
             </Footer>
