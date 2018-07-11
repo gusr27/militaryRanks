@@ -10,6 +10,7 @@ import InfoPage from './src/components/InfoPage'
 import MenuPage from './src/components/MenuPage'
 import Officers from './src/components/Officers'
 import {FooterNav} from './src/components/FooterNav'
+import {AdMobBanner} from 'react-native-admob'
 
 class App extends Component {
   render(){
@@ -56,7 +57,13 @@ class App extends Component {
          <Footer>
                 <FooterTab>
                     <Button>
-                        <Text>Footerbar</Text>
+                        <AdMobBanner
+                            adSize="fullBanner"
+                            adUnitID="
+       ca-app-pub-8401428706591374~4682652132"
+                            testDevices="ca-app-pub-8401428706591374/1481773722"
+                            onAdFailedToLoad={error => console.error(error)}
+                        />
                     </Button>
                 </FooterTab>
             </Footer>
