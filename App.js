@@ -1,7 +1,8 @@
 import React , {Component} from 'react'
-import {Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text, Segment} from 'native-base'
+import {Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text, Segment, Drawer} from 'native-base'
 import { Router, Scene, Stack,Actions } from 'react-native-router-flux'
-import Drawer from 'react-native-drawer'
+import {Easing} from 'react-native'
+
 import AirForce from './src/components/AirForce'
 import Marines from './src/components/Marines'
 import Navy from './src/components/Navy'
@@ -18,36 +19,43 @@ class App extends Component {
     state = {
         open: false
     }
+     closeDrawer = () => {
+      this.drawer._root.close()
+    };
+    openDrawer = () => {
+      this.drawer._root.open()
+    };
     
-    closeControlPanel = () => {
-    this._drawer.close()
-  };
-  openControlPanel = () => {
-    this._drawer.open()
-  };
     drawerLogic= ()=>{
         if(this.state.open){
             this.setState={
                 open: false
             }
-            this.closeControlPanel()
+            this.closeDrawer()
         }else{
             this.setState={
                 open: true
             }
-            this.openControlPanel()
+            this.openDrawer()
         }
     }
     
+ 
+    
   render(){
+      
+    
     return(
-      <Drawer
-        ref={(ref) => this._drawer = ref}
-                content={<DrawerMenu/>}
-                  type="static"
-                  tweenHandler={Drawer.tweenPresets.parallax}
-                  openDrawerOffset={0.2}
-        >
+     <Drawer
+        // style={customStyles.drawer}
+         ref={(ref) => { this.drawer = ref; }}
+          content={<DrawerMenu />}
+         onClose={() => this.closeDrawer()} 
+        
+         >
+        
+       
+            
       <Container>
        
         <Router>
@@ -103,4 +111,14 @@ class App extends Component {
     )
   }
 }
+const customStyles = {
+    drawer: {
+      shadowColor: '#000',
+      shadowOpacity: 0.4,
+      shadowRadius: 10
+    },
+    mask: {}, // style of mask if it is enabled
+    main: {} // style of main board
+  };
+
 export default App
