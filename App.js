@@ -116,7 +116,7 @@ class App extends Component {
              
                 <FooterTab>
                      <AdMobBanner
-            bannerSize="leaderboard"
+            bannerSize="smartBannerPortrait"
             adUnitID={BANNER_ID}
             testDevices="EMULATOR"
           />
