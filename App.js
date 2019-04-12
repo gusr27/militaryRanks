@@ -1,7 +1,8 @@
 import React , {Component} from 'react'
-import {Container, Header, Title, Content, Footer, FooterTab, Left, Right, Body, Icon, Text, Segment, Drawer} from 'native-base'
+import {Container, Header, Title, Content, Footer, FooterTab, Left, Right, Body, Icon, Text, Segment} from 'native-base'
 import { Router, Scene, Stack,Actions } from 'react-native-router-flux'
 import {Easing, View, Button} from 'react-native'
+import Drawer from 'react-native-drawer'
 
 import AirForce from './src/components/AirForce'
 import Marines from './src/components/Marines'
@@ -27,10 +28,10 @@ class App extends Component {
         open: false
     }
      closeDrawer = () => {
-      this.drawer._root.close()
+      this.drawer.close()
     };
     openDrawer = () => {
-      this.drawer._root.open()
+      this.drawer.open()
     };
     
     drawerLogic= ()=>{
@@ -59,11 +60,15 @@ class App extends Component {
     
     return(
      <Drawer
-         style={customStyles.drawer}
+         styles={customStyles.drawer}
          ref={(ref) => { this.drawer = ref; }}
           content={<DrawerMenu />}
-         onClose={() => this.closeDrawer()} 
-        
+         //onClose={() => this.closeDrawer()} 
+          tapToClose={true}
+         openDrawerOffset={0.2}
+         panCloseMask={0.2}
+         closedDrawerOffset={-3}
+         tweenHandler={(ratio)=>({main:{opacity:(2-ratio)/2}})}
          >
         
        

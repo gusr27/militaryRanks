@@ -2,12 +2,13 @@
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "dependencies": {
-    "expo": "^28.0.0",
-    "native-base": "^2.7.0",
-    "react": "^16.4.1",
+    "expo": "^28.0.1",
+    "native-base": "^2.12.1",
+    "react": "^16.8.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.0.tar.gz",
+    "react-native-drawer": "^2.5.1",
     "react-native-drawer-menu": "^0.2.5",
-    "react-native-iap": "^1.2.4",
-    "react-native-router-flux": "^4.0.0-beta.31"
+    "react-native-iap": "^1.4.0",
+    "react-native-router-flux": "^4.0.6"
   }
 }
