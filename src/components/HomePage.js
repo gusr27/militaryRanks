@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Container, Card, CardItem,Header, Title, Content, Button, Left, Right, Body, Icon, Text, Segment, List, ListItem, Thumbnail} from 'native-base'
+import {Container, Card, CardItem,Header, Title, Content, Button, Left, Right, Body, Text, Segment, List, ListItem, Thumbnail} from 'native-base'
 import Drawer from 'react-native-drawer'
 import {Actions} from 'react-native-router-flux'
 import afData from './AirForceList.json'

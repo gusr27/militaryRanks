@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Container, Card,CardItem, Body, Content, Icon, Text,Thumbnail, Segment, List, ListItem, Button, Left, Right} from 'native-base'
+import { Container, Card,CardItem, Body, Content, Text,Thumbnail, Segment, List, ListItem, Button, Left, Right} from 'native-base'
 import {Actions} from 'react-native-router-flux'
 import {Image, FlatList, View, TouchableWithoutFeedback} from 'react-native'
 import { Col, Row, Grid } from 'react-native-easy-grid'

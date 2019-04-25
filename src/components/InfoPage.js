@@ -43,7 +43,7 @@ class InfoPage extends Component {
     ren
 
     render(){
-        const {rate, image, description, abv, nato, address,branch, pay, id} = this.props.data   
+        const {rate, image, description, abv, grade, address,branch, pay, id} = this.props.data   
             return(
 
 
@@ -58,7 +58,7 @@ class InfoPage extends Component {
                                 <Body>
                                     <Text>{rate}</Text>
                                     <Text note>Abbreviation: {abv}</Text>
-                                    <Text note>NATO Code: {nato}</Text>
+                                    <Text note>Grade: {grade}</Text>
                                     <Text note>Addressed as: {address}</Text>
                                     <Text style={{color: "green"}} note>Basic Pay: {pay}</Text>
                                 </Body>
